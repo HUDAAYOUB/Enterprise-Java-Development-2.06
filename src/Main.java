@@ -9,7 +9,7 @@ public class Main {
         Student Huda = new Student("huda", 70);
         Student Arwa = new Student("arwa", 80);
         Student Asma = new Student("asma", 90);
-        Student Rawan = new Student("rawan", 95);
+        Student Rawan = new Student("rawan", 86);
 
 
         studentMap.put("huda", Huda);
