@@ -19,14 +19,11 @@ public class Main {
         System.out.println(studentMap.get("huda").getGrade());;
 
 
-
+        studentMap = Student.increaseGrades(studentMap);
+        System.out.println("Update:");
         System.out.println(studentMap);
-
-
-
-        studentMap.forEach((key,value) -> {
+        studentMap.forEach((key, value) -> {
             System.out.println(key + "=" + value + " ");
         });
-
     }
 }

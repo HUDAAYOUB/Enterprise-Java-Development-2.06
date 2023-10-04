@@ -35,6 +35,17 @@ public class Student {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", grade=" + grade +
+                ", studentMap=" + studentMap +
                 '}';
     }
-}
+
+    public static Map<String, Student> increaseGrades(Map<String, Student> studentMap) {
+        for (Map.Entry<String, Student> entry : studentMap.entrySet()) {
+            Student student = entry.getValue();
+            int currentGrade = student.getGrade();
+            int newGrade = (int) (currentGrade * 1.10);
+            student.setGrade(newGrade);
+        }
+        return studentMap;
+    }}
+
